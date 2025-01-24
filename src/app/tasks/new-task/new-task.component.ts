@@ -15,6 +15,7 @@ export class NewTaskComponent {
   entredTitle = '';
   entredSummary = '';
   entredDate = '';
+  
 
   onCancelTask(){
     this.cancel.emit();
