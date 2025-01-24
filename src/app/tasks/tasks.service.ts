@@ -40,6 +40,17 @@ export  class TasksService {
         return this.tasks.filter((task) => task.userId === userId);
     }
 
+    // addTask(taskData: NewTaskData, userId: string){
+    //     this.tasks.push({
+    //         id: new Date().getTime().toString(),
+    //         userId: userId,
+    //         title: taskData.title,
+    //         summary: taskData.summary,
+    //         dueDate: taskData.dueDate,
+    //       });
+    //       this.saveTasks();
+    // }
+
     addTask(taskData: NewTaskData, userId: string){
         this.tasks.push({
             id: new Date().getTime().toString(),
